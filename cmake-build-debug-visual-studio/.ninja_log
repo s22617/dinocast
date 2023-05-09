@@ -29,3 +29,6 @@
 2	272	7053670661591417	CMakeFiles/dinocaust.dir/main.cpp.obj	8192cf30720f5bb0
 3	544	7053670664302019	CMakeFiles/dinocaust.dir/src/characters/Dino.cpp.obj	428080deff56f4ca
 544	647	7053670665112218	dinocaust.exe	8040cd0746437c19
+3	539	7053677334700433	CMakeFiles/dinocaust.dir/main.cpp.obj	8192cf30720f5bb0
+5	809	7053677337391045	CMakeFiles/dinocaust.dir/src/characters/Dino.cpp.obj	428080deff56f4ca
+809	927	7053677338321260	dinocaust.exe	8040cd0746437c19
