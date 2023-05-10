@@ -20,11 +20,12 @@ public:
     void receiveDamage();
     int getHealth();
 
+    int getPosition();
+
 private:
     Animation* mAnimation;
     int mHealth;
     RigidBody* mRigidBody;
-
 };
 
 #endif //DINOCAUST_ENEMY_H

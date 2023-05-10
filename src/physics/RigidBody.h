@@ -21,10 +21,6 @@ public:
         mGravity = gravity;
     }
 
-    inline void applyForce(Vector2D force) {
-        mForce = force;
-    }
-
     inline void applyForceX(float forceX) {
         mForce.X = forceX;
     }
@@ -36,16 +32,6 @@ public:
     // null vector for disabling force when not needed
     inline void unsetForce() {
         mForce = Vector2D(0, 0);
-    }
-
-    // maybe delete?
-    inline void applyFriction(Vector2D friction) {
-        mFriction = friction;
-    }
-
-    // null vector for disabling friction when not needed
-    inline void unsetFriction() {
-        mFriction = Vector2D(0, 0);
     }
 
     inline float getMass() {
@@ -65,7 +51,6 @@ public:
     }
 
     void update(float dt) {
-        // Force + Friction = mass * acceleration
         mAcceleration.X = (mForce.X + mFriction.X)/mMass;
 
         mAcceleration.Y = mGravity + mForce.Y/mMass;
@@ -77,8 +62,8 @@ private:
     float mMass;
     float mGravity;
 
+    // DO
     Vector2D mForce;
-    // maybe delete?
     Vector2D mFriction;
 
     Vector2D mPosition;

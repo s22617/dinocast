@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_dinocaust: phony || CMakeFiles\dinocaust
 
 build CMakeFiles\dinocaust.dir\main.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\main.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -59,7 +59,7 @@ build CMakeFiles\dinocaust.dir\main.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\U
 
 build CMakeFiles\dinocaust.dir\src\main\Engine.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\main\Engine.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\main
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -67,7 +67,7 @@ build CMakeFiles\dinocaust.dir\src\main\Engine.cpp.obj: CXX_COMPILER__dinocaust_
 
 build CMakeFiles\dinocaust.dir\src\graphics\TextureHandler.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\graphics\TextureHandler.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\graphics
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -75,7 +75,7 @@ build CMakeFiles\dinocaust.dir\src\graphics\TextureHandler.cpp.obj: CXX_COMPILER
 
 build CMakeFiles\dinocaust.dir\src\characters\Dino.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\characters\Dino.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\characters
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -83,7 +83,7 @@ build CMakeFiles\dinocaust.dir\src\characters\Dino.cpp.obj: CXX_COMPILER__dinoca
 
 build CMakeFiles\dinocaust.dir\src\animation\Animation.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\animation\Animation.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\animation
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -91,7 +91,7 @@ build CMakeFiles\dinocaust.dir\src\animation\Animation.cpp.obj: CXX_COMPILER__di
 
 build CMakeFiles\dinocaust.dir\src\inputs\Input.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\inputs\Input.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\inputs
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -99,7 +99,7 @@ build CMakeFiles\dinocaust.dir\src\inputs\Input.cpp.obj: CXX_COMPILER__dinocaust
 
 build CMakeFiles\dinocaust.dir\src\main\Timer.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\main\Timer.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\main
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -107,7 +107,7 @@ build CMakeFiles\dinocaust.dir\src\main\Timer.cpp.obj: CXX_COMPILER__dinocaust_D
 
 build CMakeFiles\dinocaust.dir\src\collision\CollisionHandler.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\collision\CollisionHandler.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\collision
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -115,7 +115,7 @@ build CMakeFiles\dinocaust.dir\src\collision\CollisionHandler.cpp.obj: CXX_COMPI
 
 build CMakeFiles\dinocaust.dir\src\characters\Enemy.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\characters\Enemy.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\characters
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
@@ -123,9 +123,17 @@ build CMakeFiles\dinocaust.dir\src\characters\Enemy.cpp.obj: CXX_COMPILER__dinoc
 
 build CMakeFiles\dinocaust.dir\src\util\NumberGenerator.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\util\NumberGenerator.cpp || cmake_object_order_depends_target_dinocaust
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
-  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\util
+  TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
+  TARGET_PDB = dinocaust.pdb
+
+build CMakeFiles\dinocaust.dir\src\main\Menu.cpp.obj: CXX_COMPILER__dinocaust_Debug C$:\Users\Dan\CLionProjects\dinocaust\src\main\Menu.cpp || cmake_object_order_depends_target_dinocaust
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi -std:c++17
+  INCLUDES = -IC:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\include -IC:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\include -IC:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include -IC:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\include
+  OBJECT_DIR = CMakeFiles\dinocaust.dir
+  OBJECT_FILE_DIR = CMakeFiles\dinocaust.dir\src\main
   TARGET_COMPILE_PDB = CMakeFiles\dinocaust.dir\
   TARGET_PDB = dinocaust.pdb
 
@@ -137,10 +145,10 @@ build CMakeFiles\dinocaust.dir\src\util\NumberGenerator.cpp.obj: CXX_COMPILER__d
 #############################################
 # Link the executable dinocaust.exe
 
-build dinocaust.exe: CXX_EXECUTABLE_LINKER__dinocaust_Debug CMakeFiles\dinocaust.dir\main.cpp.obj CMakeFiles\dinocaust.dir\src\main\Engine.cpp.obj CMakeFiles\dinocaust.dir\src\graphics\TextureHandler.cpp.obj CMakeFiles\dinocaust.dir\src\characters\Dino.cpp.obj CMakeFiles\dinocaust.dir\src\animation\Animation.cpp.obj CMakeFiles\dinocaust.dir\src\inputs\Input.cpp.obj CMakeFiles\dinocaust.dir\src\main\Timer.cpp.obj CMakeFiles\dinocaust.dir\src\collision\CollisionHandler.cpp.obj CMakeFiles\dinocaust.dir\src\characters\Enemy.cpp.obj CMakeFiles\dinocaust.dir\src\util\NumberGenerator.cpp.obj | C$:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2.lib C$:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2main.lib C$:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64\SDL2_mixer.lib C$:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\lib\x64\SDL2_image.lib
+build dinocaust.exe: CXX_EXECUTABLE_LINKER__dinocaust_Debug CMakeFiles\dinocaust.dir\main.cpp.obj CMakeFiles\dinocaust.dir\src\main\Engine.cpp.obj CMakeFiles\dinocaust.dir\src\graphics\TextureHandler.cpp.obj CMakeFiles\dinocaust.dir\src\characters\Dino.cpp.obj CMakeFiles\dinocaust.dir\src\animation\Animation.cpp.obj CMakeFiles\dinocaust.dir\src\inputs\Input.cpp.obj CMakeFiles\dinocaust.dir\src\main\Timer.cpp.obj CMakeFiles\dinocaust.dir\src\collision\CollisionHandler.cpp.obj CMakeFiles\dinocaust.dir\src\characters\Enemy.cpp.obj CMakeFiles\dinocaust.dir\src\util\NumberGenerator.cpp.obj CMakeFiles\dinocaust.dir\src\main\Menu.cpp.obj | C$:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2.lib C$:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2main.lib C$:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64\SDL2_mixer.lib C$:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\lib\x64\SDL2_image.lib C$:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\lib\x64\SDL2_ttf.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = C:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2.lib  C:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2main.lib  C:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64\SDL2_mixer.lib  C:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\lib\x64\SDL2_image.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2.lib  C:\SDL2-devel-2.26.5-VC\SDL2-2.26.5\lib\x64\SDL2main.lib  C:\SDL2_mixer-devel-2.6.3-VC\SDL2_mixer-2.6.3\lib\x64\SDL2_mixer.lib  C:\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\lib\x64\SDL2_image.lib  C:\SDL2_ttf-devel-2.20.2-VC\SDL2_ttf-2.20.2\lib\x64\SDL2_ttf.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\dinocaust.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

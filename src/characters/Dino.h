@@ -10,14 +10,17 @@
 
 class Dino : public Character {
 public:
-    Dino(Properties* p, std::vector<Enemy*> enemies);
+    Dino(Properties* p, std::vector<Enemy*> *enemies);
 
     virtual void draw();
     virtual void clean();
     virtual void update(float dt);
 
+    int getScore();
+
 private:
-    std::vector<Enemy*> mEnemies;
+    std::vector<Enemy*> *mEnemies;
+    int mScore;
 
     Animation* mAnimation;
     RigidBody* mRigidBody;

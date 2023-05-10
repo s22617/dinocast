@@ -10,6 +10,7 @@ public:
     }
     // listening to keyboard actions
     void inputListen();
+    void inputListenMenu();
     bool getKeyDown(SDL_Scancode key);
 private:
     Input();

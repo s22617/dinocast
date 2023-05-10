@@ -3,8 +3,6 @@
 #ifndef DINOCAUST_TRANSFORM_H
 #define DINOCAUST_TRANSFORM_H
 
-
-
 class Transform {
 public:
     float X, Y;

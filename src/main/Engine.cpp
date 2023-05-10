@@ -31,18 +31,20 @@ bool Engine::initialize() {
         std::cout << "Renderer creation failed: " << SDL_GetError() << std::endl;
         return false;
     }
+
     TextureHandler::getInstance()->load("ground", "../assets/ground.png");
+    TextureHandler::getInstance()->load("background", "../assets/2.png");
 
     TextureHandler::getInstance()->load("player", "../assets/dino_idle_bigger.png");
     TextureHandler::getInstance()->load("player_walk", "../assets/dino_walk_bigger.png");
 
-    for (int i = 1; i < 51; i++) {
+    for (int i = 1; i < 5; i++) {
         std::string textureId = "enemy" + std::to_string(i);
         TextureHandler::getInstance()->load(textureId, "../assets/enemy_falling.png");
-        enemies.push_back(new Enemy(new Properties(textureId, NumberGenerator::getInstance()->getRandPosX(), (i * -150) + NumberGenerator::getInstance()->getRandPosY(), 35, 32), 100));
+        enemies.push_back(new Enemy(new Properties(textureId, NumberGenerator::getInstance()->getRandPosX(), (i * -150) + NumberGenerator::getInstance()->getRandPosY(), 35, 32), 50));
     }
 
-    player = new Dino(new Properties("player", 100, 476, 76, 64), enemies);
+    player = new Dino(new Properties("player", 100, 476, 76, 64), &enemies);
 
     return mIsRunning = true;
 }
@@ -59,6 +61,9 @@ bool Engine::clean() {
 void Engine::quit() {
     mIsRunning = false;
 }
+int Engine::getFinalScore() {
+    return player->getScore();
+}
 
 void Engine::update() {
     float deltaTime = Timer::getInstance()->getDeltaTime();
@@ -66,14 +71,21 @@ void Engine::update() {
     for (int i = 0; i < enemies.size(); i++) {
         enemies.at(i)->update(deltaTime);
     }
+    std::cout << enemies.size();
+    if (enemies.size() == 0) {
+        quit();
+    }
 //    enemy->update(deltaTime);
 //    enemy2->update(deltaTime);
 }
 
 void Engine::render() {
-    SDL_SetRenderDrawColor(mRenderer, 124, 169, 69, 255);
+
+    //SDL_SetRenderDrawColor(mRenderer, 124, 169, 69, 255);
+
     // We need to clear the renderer everytime before presenting it
-    SDL_RenderClear(mRenderer);
+    //SDL_RenderClear(mRenderer);
+    TextureHandler::getInstance()->draw("background", 0, -50, 960, 640);
     TextureHandler::getInstance()->draw("ground", 0, 540, 960, 100);
 
     player->draw();

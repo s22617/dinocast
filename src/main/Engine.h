@@ -4,6 +4,7 @@
 
 #include "SDL.h"
 #include "SDL_image.h"
+#include "SDL_ttf.h"
 
 const int SCREEN_WIDTH = 960;
 const int SCREEN_HEIGHT = 640;
@@ -17,6 +18,7 @@ class Engine {
         bool initialize();
         bool clean();
         void quit();
+        int getFinalScore();
 
         void update();
         void render();

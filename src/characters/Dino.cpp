@@ -3,8 +3,9 @@
 #include "../inputs/Input.h."
 #include "../collision/CollisionHandler.h"
 
-Dino::Dino(Properties *props, std::vector<Enemy*> enemies) : Character(props) {
+Dino::Dino(Properties *props, std::vector<Enemy*> *enemies) : Character(props) {
     mEnemies = enemies;
+    mScore = 0;
 
     mCollider = new Collider();
     mCollider->setBuffer(0, 0, 0, 0);
@@ -39,20 +40,27 @@ void Dino::update(float dt) {
     }
 
 //  ATTACK
-    if (Input::getInstance()->getKeyDown(SDL_SCANCODE_SPACE)) {
-        if (!mEnemies.empty()) {
-            for (unsigned int i = 0; i < mEnemies.size(); i++) {
-                Enemy* currentEnemy = mEnemies.at(i);
-                if (CollisionHandler::getInstance()->checkCollision(mCollider->get(), mEnemies.at(i)->getCollider()->get())) {
+    if (!mEnemies->empty()) {
+        for (unsigned int i = 0; i < mEnemies->size(); i++) {
+            Enemy* currentEnemy = mEnemies->at(i);
+            //std::cout << currentEnemy->getPosition() << std::endl;
+            if (currentEnemy->getPosition() > 700) {
+                currentEnemy->clean();
+                mEnemies->erase(mEnemies->begin()+i);
+            }
+            else if (Input::getInstance()->getKeyDown(SDL_SCANCODE_SPACE)) {
+                if (CollisionHandler::getInstance()->checkCollision(mCollider->get(), mEnemies->at(i)->getCollider()->get())) {
                     currentEnemy->receiveDamage();
                     if (currentEnemy->getHealth() < 0) {
                         currentEnemy->clean();
-                        mEnemies.erase(mEnemies.begin()+i);
+                        mEnemies->erase(mEnemies->begin()+i);
+                        mScore += 1;
                     }
                 }
             }
         }
     }
+
     mRigidBody->update(dt);
 
     mTransform->X += mRigidBody->getPosition().X;
@@ -68,4 +76,8 @@ void Dino::update(float dt) {
     mTransform->TranslateX(mRigidBody->getPosition().X);
 
     mAnimation->update();
+}
+
+int Dino::getScore() {
+    return mScore;
 }

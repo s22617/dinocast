@@ -25,6 +25,10 @@ void Enemy::receiveDamage() {
     std::cout << mHealth << std::endl;
 }
 
+int Enemy::getPosition() {
+    return mTransform->Y;
+}
+
 int Enemy::getHealth() {
     return mHealth;
 }

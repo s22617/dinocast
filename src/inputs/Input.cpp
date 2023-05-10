@@ -1,5 +1,6 @@
 #include "Input.h"
 #include "../main/Engine.h"
+#include "../main/Menu.h"
 
 Input* Input::sInstance = nullptr;
 
@@ -14,6 +15,25 @@ void Input::inputListen() {
         switch(event.type) {
             case SDL_QUIT:
                 Engine::getInstance()->quit();
+                break;
+            case SDL_KEYDOWN:
+                keyDown();
+                break;
+            case SDL_KEYUP:
+                keyUp();
+                break;
+        }
+    }
+}
+
+void Input::inputListenMenu() {
+    SDL_Event event;
+
+    while(SDL_PollEvent(&event)) {
+        switch(event.type) {
+            case SDL_QUIT:
+                Menu::getInstance()->terminate = true;
+                Menu::getInstance()->quit();
                 break;
             case SDL_KEYDOWN:
                 keyDown();

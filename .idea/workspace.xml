@@ -21,10 +21,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73493591-c8df-4d31-bfc9-8730ea62bf83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dinocaust.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Menu.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Menu.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/enemy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/tree2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/codemodel-v2-38ea4b42ccfcd04689a6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/index-2023-05-09T20-23-39-0377.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.cmake/api/v1/reply/target-dinocaust-Debug-f34dcad0efd7e3859960.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/animation/Animation.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/animation/Animation.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/characters/Dino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/characters/Dino.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/characters/Enemy.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/characters/Enemy.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/collision/CollisionHandler.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/collision/CollisionHandler.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/graphics/TextureHandler.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/graphics/TextureHandler.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/inputs/Input.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/inputs/Input.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/main/Engine.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/main/Engine.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/main/Timer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/main/Timer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/util/NumberGenerator.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/src/util/NumberGenerator.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/dinocaust.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Dino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Dino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Dino.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Dino.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputs/Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputs/Input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inputs/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/inputs/Input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics/RigidBody.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/RigidBody.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics/Transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/Transform.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +132,7 @@
       <workItem from="1683470064077" duration="10936000" />
       <workItem from="1683542281321" duration="36995000" />
       <workItem from="1683584942909" duration="153000" />
-      <workItem from="1683648272546" duration="13935000" />
+      <workItem from="1683648272546" duration="31127000" />
     </task>
     <servers />
   </component>
