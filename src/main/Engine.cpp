@@ -38,7 +38,7 @@ bool Engine::initialize() {
     TextureHandler::getInstance()->load("player", "../assets/dino_idle_bigger.png");
     TextureHandler::getInstance()->load("player_walk", "../assets/dino_walk_bigger.png");
 
-    for (int i = 1; i < 5; i++) {
+    for (int i = 1; i < 25; i++) {
         std::string textureId = "enemy" + std::to_string(i);
         TextureHandler::getInstance()->load(textureId, "../assets/enemy_falling.png");
         enemies.push_back(new Enemy(new Properties(textureId, NumberGenerator::getInstance()->getRandPosX(), (i * -150) + NumberGenerator::getInstance()->getRandPosY(), 35, 32), 50));
@@ -71,20 +71,12 @@ void Engine::update() {
     for (int i = 0; i < enemies.size(); i++) {
         enemies.at(i)->update(deltaTime);
     }
-    std::cout << enemies.size();
     if (enemies.size() == 0) {
         quit();
     }
-//    enemy->update(deltaTime);
-//    enemy2->update(deltaTime);
 }
 
 void Engine::render() {
-
-    //SDL_SetRenderDrawColor(mRenderer, 124, 169, 69, 255);
-
-    // We need to clear the renderer everytime before presenting it
-    //SDL_RenderClear(mRenderer);
     TextureHandler::getInstance()->draw("background", 0, -50, 960, 640);
     TextureHandler::getInstance()->draw("ground", 0, 540, 960, 100);
 
@@ -93,18 +85,9 @@ void Engine::render() {
         enemies.at(i)->draw();
     }
 
-//    enemy->draw();
-//    enemy2->draw();
     SDL_RenderPresent(mRenderer);
 }
 
 void Engine::events() {
-//    SDL_Event event;
-//    SDL_PollEvent(&event);
-//    switch(event.type) {
-//        case SDL_QUIT:
-//            quit();
-//            break;
-//    }
     Input::getInstance()->inputListen();
 }

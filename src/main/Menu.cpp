@@ -142,7 +142,6 @@ void Menu::render() {
     SDL_RenderCopy(mRenderer, Message1, NULL, &Message_rect1);
     SDL_RenderCopy(mRenderer, Message2, NULL, &Message_rect2);
 
-    //TextureHandler::getInstance()->draw("dino", SCREEN_WIDTH_2 / 2, SCREEN_HEIGHT_2 / 2, 114, 96);
     SDL_RenderPresent(mRenderer);
 }
 

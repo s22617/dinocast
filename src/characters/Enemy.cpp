@@ -22,7 +22,6 @@ void Enemy::clean() {
 
 void Enemy::receiveDamage() {
     mHealth -= 50;
-    std::cout << mHealth << std::endl;
 }
 
 int Enemy::getPosition() {
