@@ -20,11 +20,13 @@ public:
     void receiveDamage();
     int getHealth();
 
-    int getPosition();
+    float getPosition();
+    void setPosition(float Y);
 
 private:
     Animation* mAnimation;
     int mHealth;
+
     RigidBody* mRigidBody;
 };
 

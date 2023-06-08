@@ -2,6 +2,7 @@
 #define DINOCAUST_RIGIDBODY_H
 
 #include "Vector2D.h"
+#include <cmath>
 
 const float DEFAULT_MASS_VALUE = 1.0f;
 const float GRAVITY_FORCE = 9.8f;
@@ -50,11 +51,26 @@ public:
         return mAcceleration;
     }
 
-    void update(float dt) {
-        mAcceleration.X = (mForce.X + mFriction.X)/mMass;
+    float updateEnemyFalling(float dt) {
 
-        mAcceleration.Y = mGravity + mForce.Y/mMass;
+        mAcceleration.Y = (mAcceleration.Y + mGravity / mMass);
+
+        mVelocity.Y = mAcceleration.Y * dt;
+
+        float addPositionY = mVelocity.Y * dt / 1000.0f;
+        //std::cout << addPositionY << std::endl;
+        if (addPositionY > 5) {
+            addPositionY = 5;
+        }
+
+        return addPositionY;
+    }
+
+    void updatePlayerMoving(float dt) {
+        mAcceleration.X = mForce.X/mMass;
+
         mVelocity = mAcceleration * dt;
+
         mPosition = mVelocity * dt;
     }
 
@@ -62,10 +78,7 @@ private:
     float mMass;
     float mGravity;
 
-    // DO
     Vector2D mForce;
-    Vector2D mFriction;
-
     Vector2D mPosition;
     Vector2D mVelocity;
     Vector2D mAcceleration;

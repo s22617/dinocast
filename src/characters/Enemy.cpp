@@ -24,8 +24,12 @@ void Enemy::receiveDamage() {
     mHealth -= 50;
 }
 
-int Enemy::getPosition() {
+float Enemy::getPosition() {
     return mTransform->Y;
+}
+
+void Enemy::setPosition(float Y) {
+    mTransform->Y += Y;
 }
 
 int Enemy::getHealth() {
@@ -33,9 +37,13 @@ int Enemy::getHealth() {
 }
 
 void Enemy::update(float dt) {
-    mTransform->Y += 1.5;
+    if (getPosition() < -100) {
+        setPosition(2.0f);
+    }
+    else {
+        setPosition(mRigidBody->updateEnemyFalling(dt));
+    }
     mCollider->set(mTransform->X, mTransform->Y, 76, 64);
-    mRigidBody->update(dt);
 
     mAnimation->update();
 }

@@ -67,9 +67,7 @@ int Engine::getFinalScore() {
 
 void Engine::update() {
     float deltaTime = Timer::getInstance()->getDeltaTime();
-    std::cout << deltaTime << std::endl;
     if (deltaTime > 0) {
-        //float* dtPointer = &deltaTime;
         Timer::getInstance()->delayIfNeeded(deltaTime);
     }
     player->update(deltaTime);

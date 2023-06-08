@@ -31,12 +31,12 @@ void Dino::update(float dt) {
     if (Input::getInstance()->getKeyDown(SDL_SCANCODE_LEFT)) {
         Dino::playerDirection = SDL_FLIP_NONE;
         mAnimation->setProperties("player_walk", 0, 2, 120, Dino::playerDirection);
-        mRigidBody->applyForceX(-8);
+        mRigidBody->applyForceX(-5);
     }
     if (Input::getInstance()->getKeyDown(SDL_SCANCODE_RIGHT)) {
         Dino::playerDirection = SDL_FLIP_HORIZONTAL;
         mAnimation->setProperties("player_walk", 0, 2, 120, Dino::playerDirection);
-        mRigidBody->applyForceX(8);
+        mRigidBody->applyForceX(5);
     }
 
 //  ATTACK
@@ -61,7 +61,7 @@ void Dino::update(float dt) {
         }
     }
 
-    mRigidBody->update(dt);
+    mRigidBody->updatePlayerMoving(dt);
 
     mTransform->X += mRigidBody->getPosition().X;
     mCollider->set(mTransform->X, mTransform->Y, 76, 64);

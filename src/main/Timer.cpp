@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Timer.h"
 #include "SDL.h"
 
@@ -15,8 +14,8 @@ void Timer::tick() {
 
 void Timer::delayIfNeeded(float deltaTime) {
     if (deltaTime < TARGET_DELTA_TIME) {
-        std::cout << TARGET_DELTA_TIME - deltaTime << std::endl;
-        SDL_Delay(15);
+        //std::cout << TARGET_DELTA_TIME - deltaTime << std::endl;
+        SDL_Delay(TARGET_DELTA_TIME - deltaTime);
     }
 
 
