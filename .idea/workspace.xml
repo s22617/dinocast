@@ -22,6 +22,13 @@
   <component name="ChangeListManager">
     <list default="true" id="73493591-c8df-4d31-bfc9-8730ea62bf83" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-visual-studio/dinocaust.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/characters/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics/RigidBody.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/RigidBody.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +113,7 @@
       <workItem from="1683682273383" duration="246000" />
       <workItem from="1683682525912" duration="79000" />
       <workItem from="1683755077215" duration="1908000" />
-      <workItem from="1686238657892" duration="18113000" />
+      <workItem from="1686238657892" duration="20119000" />
     </task>
     <servers />
   </component>

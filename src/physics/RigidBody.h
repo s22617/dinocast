@@ -53,16 +53,15 @@ public:
 
     float updateEnemyFalling(float dt) {
 
-        mAcceleration.Y = (mAcceleration.Y + mGravity / mMass);
+        mAcceleration.Y = (mAcceleration.Y + mGravity + mForce.Y / mMass);
 
         mVelocity.Y = mAcceleration.Y * dt;
 
         float addPositionY = mVelocity.Y * dt / 1000.0f;
         //std::cout << addPositionY << std::endl;
-        if (addPositionY > 5) {
-            addPositionY = 5;
+        if (addPositionY > 6) {
+            addPositionY = 6;
         }
-
         return addPositionY;
     }
 

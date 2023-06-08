@@ -37,7 +37,7 @@ int Enemy::getHealth() {
 }
 
 void Enemy::update(float dt) {
-    if (getPosition() < -100) {
+    if (getPosition() < -32) {
         setPosition(2.0f);
     }
     else {
