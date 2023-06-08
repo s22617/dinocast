@@ -2,7 +2,8 @@
 #define DINOCAUST_TIMER_H
 
 const int FPS = 60;
-const float DELTA_TIME = 1.5f;
+const float MAX_DELTA_TIME = 1.5f;
+const float TARGET_DELTA_TIME = 1000 /60;
 
 class Timer {
 public:
@@ -10,6 +11,7 @@ public:
         return sInstance = (sInstance != nullptr) ? sInstance : new Timer();
     }
     void tick();
+    void delayIfNeeded(float deltaTime);
     inline float getDeltaTime() {
         return mDeltaTime;
     };
